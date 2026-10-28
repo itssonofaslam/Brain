@@ -1,0 +1,53 @@
+# REF4 measured camera (1280x720, 24 fps, 12379 frames, 515.79 s)
+Shots >=0.5 s analysed: 248. Locked: 199 (80%). Moves: 49.
+
+## Moves (net pan/tilt > 8 px or zoom-idx > 40)
+- frames 0-111 (0.00-4.62s, 4.6s): pan 82px tilt 5px zoom-idx -6 peak 4.0px/f
+- frames 111-185 (4.62-7.71s, 3.1s): pan -77px tilt -85px zoom-idx -501 peak 9.5px/f
+- frames 239-275 (9.96-11.46s, 1.5s): pan 1px tilt -3px zoom-idx 42 peak 0.3px/f
+- frames 275-369 (11.46-15.38s, 3.9s): pan -287px tilt -163px zoom-idx 442 peak 32.3px/f
+- frames 1112-1125 (46.33-46.88s, 0.5s): pan -10px tilt 15px zoom-idx 243 peak 7.5px/f
+- frames 1171-1184 (48.79-49.33s, 0.5s): pan 46px tilt -11px zoom-idx 191 peak 22.3px/f
+- frames 1224-1238 (51.00-51.58s, 0.6s): pan 16px tilt -37px zoom-idx 263 peak 17.0px/f
+- frames 1294-1358 (53.92-56.58s, 2.7s): pan -111px tilt 14px zoom-idx -307 peak 23.2px/f
+- frames 1410-1441 (58.75-60.04s, 1.3s): pan 0px tilt -0px zoom-idx 42 peak 0.1px/f
+- frames 1526-1563 (63.58-65.12s, 1.5s): pan -30px tilt -3px zoom-idx -136 peak 11.8px/f
+- frames 2257-2307 (94.04-96.12s, 2.1s): pan 0px tilt 0px zoom-idx -56 peak 0.0px/f
+- frames 2307-2586 (96.12-107.75s, 11.6s): pan -2px tilt -2px zoom-idx 541 peak 0.2px/f
+- frames 2586-2645 (107.75-110.21s, 2.5s): pan -2px tilt -0px zoom-idx 60 peak 0.2px/f
+- frames 2991-3058 (124.62-127.42s, 2.8s): pan -9px tilt 0px zoom-idx 382 peak 3.3px/f
+- frames 3058-3208 (127.42-133.67s, 6.2s): pan 40px tilt -3px zoom-idx 94 peak 28.3px/f
+- frames 3891-3977 (162.12-165.71s, 3.6s): pan 0px tilt -1px zoom-idx 2895 peak 0.2px/f
+- frames 4088-4211 (170.33-175.46s, 5.1s): pan 0px tilt 0px zoom-idx -69 peak 0.0px/f
+- frames 4453-4580 (185.54-190.83s, 5.3s): pan 0px tilt 0px zoom-idx 76 peak 0.1px/f
+- frames 4712-4825 (196.33-201.04s, 4.7s): pan 40px tilt -78px zoom-idx -160 peak 4.3px/f
+- frames 4825-4853 (201.04-202.21s, 1.2s): pan 0px tilt 0px zoom-idx 126 peak 0.0px/f
+- frames 4904-4993 (204.33-208.04s, 3.7s): pan 0px tilt 0px zoom-idx -139 peak 0.0px/f
+- frames 5034-5183 (209.75-215.96s, 6.2s): pan -16px tilt 0px zoom-idx 239 peak 2.2px/f
+- frames 5375-5545 (223.96-231.04s, 7.1s): pan 133px tilt 18px zoom-idx -1179 peak 12.7px/f
+- frames 5703-5843 (237.62-243.46s, 5.8s): pan -193px tilt -200px zoom-idx 362 peak 28.3px/f
+- frames 5925-6059 (246.88-252.46s, 5.6s): pan -7px tilt 0px zoom-idx 794 peak 1.7px/f
+- frames 6059-6210 (252.46-258.75s, 6.3s): pan -354px tilt -103px zoom-idx 275 peak 15.9px/f
+- frames 6244-6334 (260.17-263.92s, 3.8s): pan -0px tilt 160px zoom-idx 15 peak 1.9px/f
+- frames 6399-6486 (266.62-270.25s, 3.6s): pan -6px tilt 139px zoom-idx 103 peak 1.9px/f
+- frames 6486-6597 (270.25-274.88s, 4.6s): pan 0px tilt -0px zoom-idx 291 peak 0.0px/f
+- frames 6898-7057 (287.42-294.04s, 6.6s): pan 0px tilt -0px zoom-idx 68 peak 0.0px/f
+- frames 7114-7169 (296.42-298.71s, 2.3s): pan 0px tilt 0px zoom-idx 60 peak 0.0px/f
+- frames 7492-7532 (312.17-313.83s, 1.7s): pan 3px tilt 1px zoom-idx -55 peak 0.5px/f
+- frames 7532-7636 (313.83-318.17s, 4.3s): pan 0px tilt 4px zoom-idx 391 peak 0.6px/f
+- frames 7807-7942 (325.29-330.92s, 5.6s): pan 0px tilt 0px zoom-idx 127 peak 0.0px/f
+- frames 8077-8108 (336.54-337.83s, 1.3s): pan 0px tilt 0px zoom-idx 53 peak 0.0px/f
+- frames 8187-8291 (341.12-345.46s, 4.3s): pan -0px tilt -0px zoom-idx 113 peak 0.1px/f
+- frames 8340-8408 (347.50-350.33s, 2.8s): pan 11px tilt -4px zoom-idx -1 peak 8.9px/f
+- frames 8638-8668 (359.92-361.17s, 1.2s): pan -9px tilt 0px zoom-idx 17 peak 0.4px/f
+- frames 8960-8983 (373.33-374.29s, 1.0s): pan 19px tilt 1px zoom-idx 25 peak 2.6px/f
+- frames 9141-9203 (380.88-383.46s, 2.6s): pan -0px tilt -0px zoom-idx -42 peak 0.0px/f
+- frames 9203-9277 (383.46-386.54s, 3.1s): pan -0px tilt -28px zoom-idx -205 peak 10.1px/f
+- frames 9685-9719 (403.54-404.96s, 1.4s): pan 0px tilt -0px zoom-idx -53 peak 0.0px/f
+- frames 9884-9959 (411.83-414.96s, 3.1s): pan -1px tilt -0px zoom-idx -54 peak 0.1px/f
+- frames 10558-10684 (439.92-445.17s, 5.2s): pan 0px tilt 32px zoom-idx 392 peak 3.0px/f
+- frames 10684-10725 (445.17-446.88s, 1.7s): pan 0px tilt -3px zoom-idx 67 peak 0.7px/f
+- frames 10863-11000 (452.62-458.33s, 5.7s): pan 126px tilt 56px zoom-idx 237 peak 7.6px/f
+- frames 11594-11674 (483.08-486.42s, 3.3s): pan 239px tilt 0px zoom-idx -45 peak 38.5px/f
+- frames 11761-11815 (490.04-492.29s, 2.2s): pan -24px tilt -2px zoom-idx 128 peak 1.3px/f
+- frames 11962-12032 (498.42-501.33s, 2.9s): pan 121px tilt -11px zoom-idx 33 peak 15.7px/f

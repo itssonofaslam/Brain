@@ -1,0 +1,114 @@
+{
+ "ref1": {
+  "fps": 30.0,
+  "frames": 7977,
+  "dur": 265.9,
+  "cuts": 79,
+  "shots_real": 77,
+  "mean_shot": 3.22,
+  "median_shot": 3.27,
+  "sub025": 1,
+  "locked": 63,
+  "n_shots": 79,
+  "flash_runs": 4,
+  "flash_len_median": 4.0,
+  "flash_len_dist": {
+   "3": 1,
+   "4": 2,
+   "7": 1
+  },
+  "letterbox_top_median": 40,
+  "letterbox_bot_median": 40,
+  "near_black_pct": 49,
+  "meanL": 16.3
+ },
+ "ref2": {
+  "fps": 24.0,
+  "frames": 10389,
+  "dur": 432.9,
+  "cuts": 223,
+  "shots_real": 202,
+  "mean_shot": 2.1,
+  "median_shot": 1.98,
+  "sub025": 20,
+  "locked": 72,
+  "n_shots": 196,
+  "flash_runs": 24,
+  "flash_len_median": 2.0,
+  "flash_len_dist": {
+   "1": 10,
+   "2": 14
+  },
+  "letterbox_top_median": 41,
+  "letterbox_bot_median": 41,
+  "near_black_pct": 37,
+  "meanL": 22.5
+ },
+ "ref3": {
+  "fps": 24.0,
+  "frames": 9756,
+  "dur": 406.5,
+  "cuts": 133,
+  "shots_real": 130,
+  "mean_shot": 2.7,
+  "median_shot": 2.15,
+  "sub025": 2,
+  "locked": 93,
+  "n_shots": 131,
+  "flash_runs": 2,
+  "flash_len_median": 3.0,
+  "flash_len_dist": {
+   "2": 1,
+   "4": 1
+  },
+  "letterbox_top_median": 41,
+  "letterbox_bot_median": 41,
+  "near_black_pct": 63,
+  "meanL": 13.7
+ },
+ "ref4": {
+  "fps": 24.0,
+  "frames": 12382,
+  "dur": 515.9,
+  "cuts": 269,
+  "shots_real": 253,
+  "mean_shot": 1.96,
+  "median_shot": 1.5,
+  "sub025": 15,
+  "locked": 80,
+  "n_shots": 248,
+  "flash_runs": 12,
+  "flash_len_median": 4.0,
+  "flash_len_dist": {
+   "1": 2,
+   "2": 1,
+   "3": 2,
+   "4": 7
+  },
+  "letterbox_top_median": 41,
+  "letterbox_bot_median": 41,
+  "near_black_pct": 42,
+  "meanL": 26.9
+ },
+ "ref5": {
+  "fps": 24.0,
+  "frames": 35065,
+  "dur": 1461.0,
+  "cuts": 512,
+  "shots_real": 510,
+  "mean_shot": 2.82,
+  "median_shot": 2.5,
+  "sub025": 1,
+  "locked": 88,
+  "n_shots": 511,
+  "flash_runs": 4,
+  "flash_len_median": 4.0,
+  "flash_len_dist": {
+   "4": 4
+  },
+  "letterbox_top_median": 40,
+  "letterbox_bot_median": 40,
+  "near_black_pct": 5,
+  "meanL": 44.7
+ }
+}

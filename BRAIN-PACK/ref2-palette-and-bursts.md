@@ -1,0 +1,50 @@
+# REF2 measured palette per scene (k-means 6 colours of 1280x720 frame incl. bars; % of pixels)
+
+- dusk street/cafe wide @ 1.5s: #20121b(53%)  #452a2d(21%)  #6c4f58(10%)  #cb9268(7%)  #997f97(7%)  #ece1cf(1%)
+- cafe wide @ 10.5s: #1b0f16(33%)  #381f28(27%)  #805949(11%)  #573b3b(11%)  #c17d51(10%)  #d4a16c(8%)
+- purple dusk hero rays @ 33s: #6a5276(29%)  #463656(26%)  #2b1823(20%)  #987192(20%)  #d04335(3%)  #d6ab94(3%)
+- title facade @ 36s: #1f111a(45%)  #42292b(19%)  #674747(14%)  #cd9787(10%)  #94697a(9%)  #f8e9d7(3%)
+- lab window @ 41s: #311f2c(35%)  #1e121e(31%)  #51393e(17%)  #725452(8%)  #f0c196(7%)  #faf2de(2%)
+- ruler blue diagram @ 54s: #242635(40%)  #1a1f2c(29%)  #121520(28%)  #50403e(2%)  #aeaeb4(1%)  #896b5c(1%)
+- ruler grey @ 60s: #1b1a21(22%)  #696367(17%)  #8b8587(17%)  #a9a1a0(16%)  #48434a(15%)  #ccc3be(13%)
+- night walk @ 76s: #161426(30%)  #05040a(27%)  #2f2c40(13%)  #78647b(11%)  #4f4b64(10%)  #978fa3(8%)
+- flowerpot warm @ 87s: #2c1a22(49%)  #20131a(38%)  #130a11(11%)  #68ae6b(1%)  #ebc195(1%)  #7e5744(0%)
+- gaming room @ 121s: #282443(35%)  #171428(23%)  #3e3866(20%)  #5e4c8f(15%)  #9372c5(5%)  #852827(4%)
+- VICTORY @ 127s: #1c1f40(39%)  #11132a(33%)  #31305e(20%)  #efdb8a(4%)  #856b59(3%)  #e0eae2(1%)
+- tennis hall @ 136s: #11070c(49%)  #231215(23%)  #422723(11%)  #614136(7%)  #d5a9a5(6%)  #8b6453(4%)
+- tennis window @ 139s: #221015(36%)  #351e1d(30%)  #4a2c27(17%)  #d8a37b(8%)  #af808d(8%)  #6e504a(2%)
+- baseball dusk @ 165s: #24272d(32%)  #121818(28%)  #382648(17%)  #55345e(13%)  #7b4b6d(8%)  #b08986(2%)
+- baseball night @ 171s: #121734(34%)  #080b1f(29%)  #212b4a(15%)  #000000(13%)  #43425f(7%)  #d3cdcd(1%)
+- boxing ring @ 184s: #0c050a(54%)  #180d12(21%)  #25171c(15%)  #412d2d(6%)  #6c494d(3%)  #a49970(1%)
+- boxing hero lamp @ 203s: #10080c(69%)  #2f1a17(16%)  #523527(11%)  #d34133(2%)  #876649(1%)  #e8c199(0%)
+- football sunset @ 211s: #484338(26%)  #2f2d23(20%)  #947186(18%)  #624f78(16%)  #6e5b4d(12%)  #c19ea1(8%)
+- keeper goal @ 217s: #715e47(27%)  #493e31(21%)  #a37d5f(21%)  #d1a47c(13%)  #f5d0a3(10%)  #1f1315(8%)
+- bedroom @ 275s: #232442(38%)  #131227(32%)  #363a60(15%)  #762524(6%)  #585189(6%)  #d4b356(2%)
+- stadium title @ 288s: #2f3c47(33%)  #465162(28%)  #1f2232(20%)  #0a0914(12%)  #666376(6%)  #f4e6d9(2%)
+- scoreboard @ 291s: #2e3045(27%)  #212334(26%)  #383950(21%)  #100d1b(19%)  #4b485f(4%)  #c5c4c1(2%)
+- floodlight rays @ 313s: #0c112a(30%)  #020209(23%)  #222d53(20%)  #3e4e79(20%)  #67799e(5%)  #bfcbdc(3%)
+- housing bokeh @ 316s: #273151(25%)  #3f4e74(23%)  #131830(22%)  #000002(14%)  #617293(11%)  #99a6c0(3%)
+- stadium night pitch @ 326s: #10152c(22%)  #425679(22%)  #1f2945(19%)  #31405f(18%)  #000001(14%)  #67779b(5%)
+- aerial stadium @ 349s: #0f121d(26%)  #1b1c2d(19%)  #2b2c42(19%)  #2c4b4c(15%)  #444961(13%)  #5d5e78(7%)
+- hero desk @ 376s: #26212f(30%)  #353243(25%)  #141321(17%)  #464355(17%)  #575c73(11%)  #9299ae(1%)
+- night street car @ 393s: #0e0a14(41%)  #211828(23%)  #382d3e(20%)  #584850(9%)  #dbaa7d(5%)  #9e7662(3%)
+- glasses @ 398s: #0a050c(52%)  #3f3840(19%)  #261f26(13%)  #7f6752(6%)  #d0dbdf(6%)  #c98f54(3%)
+- end card @ 431s: #160b1d(42%)  #2f162b(31%)  #5b2d3a(17%)  #db241b(5%)  #a4948c(3%)  #f5e9e3(1%)
+
+## Burst/flash events (mean brightness > 150) with frame counts @24fps
+- frame 149 (6.21s): 1 frames above 150 mean
+- frame 297 (12.38s): 1 frames above 150 mean
+- frame 760 (31.67s): 2 frames above 150 mean
+- frame 1522 (63.42s): 1 frames above 150 mean
+- frame 2059 (85.79s): 1 frames above 150 mean
+- frame 2374 (98.92s): 1 frames above 150 mean
+- frame 3357 (139.88s): 1 frames above 150 mean
+- frame 4226 (176.08s): 1 frames above 150 mean
+- frame 5339 (222.46s): 2 frames above 150 mean
+- frame 5505 (229.38s): 1 frames above 150 mean
+- frame 5677 (236.54s): 3 frames above 150 mean
+- frame 6176 (257.33s): 1 frames above 150 mean
+- frame 7095 (295.62s): 1 frames above 150 mean
+- frame 7215 (300.62s): 2 frames above 150 mean
+- frame 7732 (322.17s): 1 frames above 150 mean
+- frame 10301 (429.21s): 1 frames above 150 mean
