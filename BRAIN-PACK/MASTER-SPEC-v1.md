@@ -109,3 +109,6 @@ PLUGIN-FOLD-IN-v1.md: build protocol, beat splitter start values, rig vocabulary
 
 ## 24. Fly shots (3D / depth travel)
 FLY-SHOTS-3D-v1.md: dynamic, brain decides when space is the story; method A depth-layer fly (default), method B true 3D (rare); camera grammar from our travelling wides; measured 0.2-2 per min across refs.
+
+## 25. Cinematic intelligence (2026-10-29, owner instruction)
+CINEMATIC-INTELLIGENCE-v1.md adds the coordinating layer: purpose test, priority ladder, dramatic beats and intent, staging, world-state tracking, event/contact frames, one frame timeline (start_f inclusive, end_f exclusive), determinism (seeded, frame-derived), sound hooks, validate/repair/fallback, anti-patterns. It replaces older LIBRARY rules that conflict (idle "never a dead still", handheld on every dialogue close-up, unseeded randomness, J/L-cut as a note only). Measured rules in sections 0-24 are unchanged. Originals of every edited file: old/*.before-cinematic-upgrade.md.

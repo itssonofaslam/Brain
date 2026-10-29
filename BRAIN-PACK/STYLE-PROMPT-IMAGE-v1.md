@@ -1,3 +1,4 @@
+SUPERSEDED for the CHARACTER (2026-10-29): prompts A-C describe the old bold-outline stickman look. The character is now the real 3D model of CHARACTER-SPEC-v2.md (no thick outlines, ivory sphere head, slim charcoal body). Do not use C. A and B are history of how the world look was chosen; if reused for plates, remove the stickman wording.
 # IMAGE-GENERATION STYLE PROMPTS v1 (2026-10-28)
 Built only from what Salman asked for. No colours named: the AI chooses. Round head (circle, not oval), bold outlines, real 3D render feel, cinema blur, letterbox, 16:9.
 

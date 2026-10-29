@@ -1,7 +1,7 @@
 PROGRESS: complete v1 (sections 1-12). Next: Salman stress-test feedback.
 # WORLD PROMPT WRITER v1 (batch B2, 2026-10-28)
 Job: for every shot the brain decides what WORLD the shot lives in, then writes the prompt Salman pastes into the image AI, then checks the picture he sends back. Worlds are STILL 3D-rendered images, deep focus (no blur), no letterbox, no character. The brain adds depth map, blur, bokeh, glow, parallax, grain, letterbox, and the real-3D character later.
-Inputs: the beat text (what happens, emotion), the shot code from the camera library (B3), CHARACTER-BRAIN-v1.md, IMAGE-PROMPTS-v2.md, look-target/ stills.
+Inputs: the beat text (what happens, emotion), the shot code from the camera library (B3), CHARACTER-BRAIN-v2.md, IMAGE-PROMPTS-v2.md, look-target/ stills.
 Outputs: (1) a prompt block, (2) a Light Card, (3) a Plate Registry entry saved to the video's state file.
 
 ## 1. THE FIVE THINGS EVERY PLATE MUST GIVE THE BRAIN
@@ -28,7 +28,7 @@ Ask in order:
 Salman said: do not name colours in prompts for the image AI; let the AI choose. Keep that: write mood, light direction and quality words; the AI picks colours. The brain still records the colours it actually got in the Light Card.
 
 ## 4. LIGHTING RECIPES (pick one per plate, then state it in the prompt)
-Each recipe = light direction, quality, atmosphere, and how the character's rim light must match.
+Each recipe = light direction, quality, atmosphere, and how the character's rim light must match. Rim strength scale: weak about 0.3, strong at most about 0.7 (the spec wants a subtle rim; CHARACTER-BRAIN-v2 section 7).
 | recipe | prompt words (direction + quality) | rim on character | good for |
 |---|---|---|---|
 | Backlit sunset | low sun behind the scene on the right, long soft shadows toward the camera, glowing haze, lens bloom | strong warm rim on right/top edges | loneliness, hope, endings |

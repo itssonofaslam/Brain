@@ -1,11 +1,11 @@
-PROGRESS: complete v1 (sections 1-13). Next: Salman stress-test feedback.
+PROGRESS: complete v1 (sections 1-13). Cinematic-intelligence upgrade applied 2026-10-29 (sections 1, 4, 11, 13; original in old/). Next: Salman stress-test feedback.
 # EFFECTS-FOR-FEEL LIBRARY v1 (batch B4, 2026-10-28)
 Purpose: everything the director adds ON TOP of the plate and the character to create feel, realism and premium polish. The brain reasons per beat which effects to use, how strong, and when to stop. Principle (from FEEL-DEVICES-v1 and DEVICE-INVENTION-v2): effects are punctuation, not decoration; each effect needs a feeling it serves.
 Numbers marked START are starting values to tune in stress tests (1080p).
-Related: lens blur and handheld = CAMERA-SHOTS-LIBRARY-v1 sections 7-8. Feel devices (colour switch etc.) = FEEL-DEVICES-v1.md. Device invention from script = DEVICE-INVENTION-v2.md. Plates and light = WORLD-PROMPT-WRITER-v1.md. Character look = CHARACTER-BRAIN-v1.md.
+Related: lens blur and handheld = CAMERA-SHOTS-LIBRARY-v1 sections 7-8. Feel devices (colour switch etc.) = FEEL-DEVICES-v1.md. Device invention from script = DEVICE-INVENTION-v2.md. Plates and light = WORLD-PROMPT-WRITER-v1.md. Character look = CHARACTER-BRAIN-v2.md.
 
 ## 1. EFFECT BUDGET AND ORDER OF OPERATIONS
-Per shot choose: 1 grade state, 1 glow level, 1 atmosphere layer, 1-3 life elements (background), 0-1 foreground object, 0-1 feel device. More than that looks busy; fewer than that looks flat (except diagram/text shots).
+Per shot choose: 1 grade state, 1 glow level, 1 atmosphere layer, 1-3 life elements (background), 0-1 foreground object, 0-1 feel device. More than that looks busy; fewer than that looks flat (except diagram/text shots). Every effect has a defined target, a feeling it serves and start and end frames (CINEMATIC-INTELLIGENCE section 1 purpose test); never add an effect just because it exists, and never describe an effect the renderer cannot do reliably: use a supported alternative or leave it out.
 Render order (back to front, so everything sits in the same world):
 1. Plate far layer (with depth blur and bokeh)
 2. Background life (people, traffic, birds), blurred by their depth
@@ -24,18 +24,18 @@ Render cost tiers (laptop/Colab planning): heavy = depth blur and bokeh, volumet
 - Look target "our type": cinematic, rich deep darks, a glowing warm or cool accent, complementary contrast (warm light against cool shadow, or the reverse), saturated but not neon-flat, always some glow.
 - Palette choice per beat: from the feeling (WORLD-PROMPT-WRITER section 3), natural OR fictional. Fictional palettes (our purple/magenta family, impossible greens, planet colours) are allowed for what-if worlds; natural palettes for real places. Do not mix families in one scene unless the story is about the clash.
 - Per-video palette note (saved in the video state file): home palette (most scenes), 2-3 accent worlds, one "special" colour reserved for the biggest moment. Related beats echo each other; the big moment breaks the pattern.
-- Colour roles: light colour (rim and key), shadow colour, accent (props, signs, the thing that matters), skin of the character stays: cream face plate, black body (never recoloured, only lit).
+- Colour roles: light colour (rim and key), shadow colour, accent (props, signs, the thing that matters), the character's colours stay fixed: ivory head and hands, charcoal body, turquoise left wristband, black daypack, black sneakers with off-white soles (never recoloured, only lit).
 - Colour as story: warm = safe/human/hope; cool = alone/technical/threat; red/orange accent = danger or urgency; green-teal = unease or science; gold = wonder or reward; desaturation = numbness, slowed time; saturation burst = realisation. Switch rules in FEEL-DEVICES-v1 section A and B (snap 3-5 f, slow 14-25 f).
 - Grade states (START): neutral = as the plate; warm push = +8-12% warmth, highlights toward gold; cool push = shadows toward blue/teal; desaturate = -25-40% saturation; contrast lift = S-curve; each state has numbers saved with its name so it can be restored.
 - Repetition check: same palette and same light for 3 beats in a row only if the story stays in one moment.
-- Never grade the character into a new colour: rim light, reflections and plate tone only.
+- Never grade the character into a new colour: rim light, reflections and shadow only.
 
 ## 3. GLOW AND LIGHT EFFECTS (the "glowy look" of the close-up)
 | effect | what it does | START values |
 |---|---|---|
 | bloom | soft glow around bright areas | threshold = brightest 5-8% of pixels, radius 40-90 px, strength 0.25-0.5; stronger for sunset, neon, windows |
 | halation | thin warm/red halo bleeding at high-contrast edges | 0.15-0.3 strength, 6-14 px, warm tinted |
-| rim glow on character | thin bright edge on head rim, shoulders, shoes | from Light Card, 0.6-1.0; width 2-5 px at medium shot |
+| rim glow on character | thin bright edge on the head, shoulders, arms, sneaker tops; keeps the black limbs readable | from Light Card, SUBTLE 0.3-0.7 (CHARACTER-BRAIN-v2 section 7); width 2-5 px at medium shot; may be 0 only when the light motivates it |
 | light wrap | background light colour bleeding a little over the character's edges | 3-6 px, 15-30% of the background colour |
 | light shafts / god-rays | beams through haze or windows | opacity 0.1-0.3, slow drift, behind and in front of him |
 | lens flare | small streaks on the brightest source only | tiny; use only when the source is in frame; never on the face |
@@ -54,11 +54,12 @@ Premium rule: glow must come from a visible source or a recognised light recipe;
 - Wind: one wind vector per scene moves all of the above and cloth-like props the same way.
 - Heat shimmer: tiny distortion above hot ground in noon shots.
 Rules: particles obey depth (near ones blurred and larger); never uniform density; they respond to light (only lit particles glow).
+Environment responds to action when it is motivated and visible (dust settles after an impact, curtains flutter in a breeze, foliage moves as he passes, a light changes after a switch, a monitor lights a nearby surface, rain affects a wet floor), and stays coherent with the world and the Light Card. Do not add environmental activity the described world does not have if it changes the tone or implies an event the script did not give; do not fill every shot with particles and motion.
 
 ## 5. BACKGROUND LIFE (the world must feel alive)
 Rule (Salman): background life such as a stranger passing, slightly blurred. Each wide/medium shot gets 1-3 life elements chosen to fit the place and keep the main subject clear.
 Catalogue:
-- People: passers-by silhouettes on a mid or far depth layer, walking at plausible speed (scale by the Light Card scale formula so their size matches distance), a different outfit shape per person, one carrying an umbrella in rain, a cyclist, a person on the phone. Same coin-head language but slightly blurred and darker, plate in shadow. Never the same walk cycle twice in a row.
+- People: passers-by silhouettes on a mid or far depth layer, walking at plausible speed (scale by the Light Card scale formula so their size matches distance), a different outfit shape per person, one carrying an umbrella in rain, a cyclist, a person on the phone. Same stickman design language (sphere head, slim body) but slightly blurred and darker, head in shadow. Never the same walk cycle twice in a row. Looks come from CHARACTER-CASTING-v1.md section 6 (tiers, seeded picks from a shared kit library, never the main's kit).
 - Vehicles: slow cars with headlights, a bus passing, a train in the distance, bicycles.
 - Animals: birds crossing sky, a pigeon on a railing, a dog far away.
 - Place motion: flags, curtains, steam from vents, sign flicker, traffic lights changing, elevator doors, screens updating, water ripples, grass bending, flames.
@@ -99,13 +100,16 @@ When the script explains how or why: choose between (a) glowing line diagram flo
 ## 10. SHADOWS, REFLECTIONS AND INTERACTIVE LIGHT (so he belongs in the picture, not slapped on)
 - Shadow: direction from the Light Card; softness from the light size (hard sun = sharp, overcast = only a soft contact shadow); length from light height. Contact shadow under shoes always. A second, fainter shadow for a secondary light.
 - Reflection on glossy ground: mirrored copy anchored at the shoes, sharp at contact and increasingly blurred with distance, dimmer than the figure, stronger at grazing angles (Fresnel), distorted by ripples or rain.
-- Environment reflection on his glossy black body: highlights from the real bright sources of the plate (signs, windows, sun), rolling along arms and head rim; moving lights sweep across him.
-- Interactive light: walking through a shaft brightens him; stepping into shade darkens the rim; a neon sign tints the rim and face-plate edge; flicker follows the source; a lit phone screen or flame casts coloured light on his face plate.
+- Light response on him (no chrome): soft broad highlights from the real bright sources of the plate (signs, windows, sun) on the satin head and the wristband, a catchlight in the eyes, only gentle sheen on the matte charcoal limbs and backpack; moving lights sweep across him.
+- Interactive light: walking through a shaft brightens him; stepping into shade darkens the rim; a neon sign tints the rim and the side of the head; flicker follows the source; a lit phone screen or flame casts coloured light on his face.
 - Light wrap and ambient occlusion where he touches the ground; same haze and grain on him as on the world.
 - Check: put him in the plate with all effects off, then on; if he still looks pasted, a shadow, reflection or light match is wrong.
 
 ## 11. MOTION EFFECTS AND PHYSICS
-- Motion blur: 180 degree shutter on fast movers only: blur length about half of the per-frame displacement; never on slow moves.
+- Motion blur: 180 degree shutter on fast movers only: blur length about half of the per-frame displacement; never on slow moves; not a permanent smear.
+- Slow motion / speed ramp: only when emphasis, perception or story rhythm calls for it (the references use it for approach and suspense), never on every impact. Write start frame, end frame, speed curve and mark the change as a sound hook so sound can follow the time change.
+- Shake and impact response: only for a real event on screen, not for every dramatic line (CAMERA-SHOTS-LIBRARY section 8 for values).
+- Vignette and lens distortion: only when the style and the moment justify them; keep faces undistorted. Bloom and glow stay restrained enough to protect detail. Colour and light shifts support the story and stay consistent across adjacent shots.
 - Dust puffs on heavy footsteps and landings: 3-6 small soft puffs, 10-18 frames, colour from the ground and light.
 - Impact: 1-2 frame bright burst, then a 6-10 frame ring and camera impulse (CAMERA-SHOTS-LIBRARY section 8).
 - Falling and thrown things: gravity with slight drag and a small damped bounce (no cartoon bounce); heavier objects slower to start and land harder.
@@ -118,5 +122,5 @@ Dissolve 6-14 f; flash 1-2 f (bloom x3 over 4 f for a white-out; 3.3 s only for 
 ## 13. INVENTING NEW EFFECTS, GUARDRAILS, QA
 - Invention: run the FEEL-DEVICES-v1 protocol (feeling, lever, state A/B, switch style, restore, repetition check). Label any new device "proposal" until Salman approves it in a stress test.
 - Guardrails: motivated by the story; premium and realistic at the level of the look target (no clip-art stickers, no random lens flare); one new device at a time; the same device no more than 3 times in 60 s; if unsure, do less.
-- QA checklist (stress tests): Does glow come from a visible source? Do shadows and reflections match the Light Card? Do particles obey depth? Is life in the background plausible and not distracting? Is any foreground object motivated? Does text read clearly, in the right style, away from the face? Is the story clear when muted? Is the order of operations respected (bars last)? Is anything heavy that could be lighter?
-- Links: FEEL-DEVICES-v1.md, DEVICE-INVENTION-v2.md, CAMERA-SHOTS-LIBRARY-v1.md, WORLD-PROMPT-WRITER-v1.md, CHARACTER-BRAIN-v1.md, DIRECTOR-BRAIN-REQUIREMENTS.md.
+- QA checklist (stress tests): Does each effect have a target, a timeline and a story reason (would the story be less clear without it)? Does glow come from a visible source? Do shadows and reflections match the Light Card? Do particles obey depth? Is life in the background plausible and not distracting? Is any foreground object motivated? Does text read clearly, in the right style, away from the face? Is the story clear when muted? Is the order of operations respected (bars last)? Is anything heavy that could be lighter?
+- Links: FEEL-DEVICES-v1.md, DEVICE-INVENTION-v2.md, CAMERA-SHOTS-LIBRARY-v1.md, WORLD-PROMPT-WRITER-v1.md, CHARACTER-BRAIN-v2.md, DIRECTOR-BRAIN-REQUIREMENTS.md.

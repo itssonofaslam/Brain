@@ -12,6 +12,8 @@ Everything the brain-building step needs. Read in this order.
 - DEVICE-INVENTION-v2.md and FEEL-DEVICES-v1.md (invent feel devices from the script)
 - FLY-SHOTS-3D-v1.md (fly / depth-travel shots, dynamic)
 - PLUGIN-FOLD-IN-v1.md (build protocol, beat splitter, rig vocabulary + invention rule, visual checklist, render planning, decisions on conflicts)
+- CINEMATIC-INTELLIGENCE-v1.md (coordinating layer, 2026-10-29: purpose test, priority ladder, beats, staging, state, event frames, timeline, determinism, sound hooks, validation/repair; wins over older library rules)
+- CHARACTER-SPEC-v2.md (verbatim canonical 3D stickman, locked 2026-10-29), CHARACTER-BRAIN-v2.md (working numbers, expressions, rig, materials, scale, views, QA), CHARACTER-IMPLEMENTATION-PROTOCOL-v1.md (build/replace procedure, training only), CHARACTER-CASTING-v1.md (NPCs, crowds and script characters). They replace the v1 chibi character; v1 copies are in old/.
 - PLUGIN-SOUND-PARKED.md (sound notes, for the sound brain later)
 
 ## C. Measured data per reference (ref1 Telekinesis, ref2 Reaction Time, ref3 One Second Felt Like Ten, ref4 500 IQ, ref5 Gravity film)

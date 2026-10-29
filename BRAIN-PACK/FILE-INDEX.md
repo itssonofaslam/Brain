@@ -44,17 +44,21 @@ SHOT-GRAMMAR-v1.md (when to use which shot: face XCU, object macro, wide, physic
 
 - style-previews/: make_previews.py + style-1..5 PNG/SVG, 2026-10-28 still previews of 5 candidate looks (clay, paper-cut, toon noodle, glass lantern, charcoal), same egg-head character, 3 poses, letterbox, blurred foreground pole.
 
-- style-previews/style-6-real3d.png + real3d/ (render3d.html, shoot.py): 2026-10-28 real 3D test still, own WebGL ray-marching shader (three.js download blocked). Glossy black head with white face marks, real lights, soft shadows, camera blur.
+- [OLD LOOK, retired 2026-10-29, history only] style-previews/style-6-real3d.png + real3d/ (render3d.html, shoot.py): 2026-10-28 real 3D test still, own WebGL ray-marching shader (three.js download blocked). Glossy black head with white face marks, real lights, soft shadows, camera blur.
 
-- STYLE-PROMPT-IMAGE-v1.md: image-generation prompts (master, close-up, character sheet) for choosing our character look. In BRAIN-PACK.
+- STYLE-PROMPT-IMAGE-v1.md: image-generation prompts (master, close-up, character sheet) that chose the OLD look. SUPERSEDED for the character 2026-10-29. In BRAIN-PACK.
 
-- look-target/: Salman's chosen LOOK TARGET (3 AI-generated stills from the image prompt: stadium wide, face close-up, rain street). Round black/white-face stickman, bold outline, real 3D lighting, cinema blur. Not in zip (images).
+- look-target/: [world/lighting reference only now; its character is retired] Salman's chosen LOOK TARGET (3 AI-generated stills from the image prompt: stadium wide, face close-up, rain street). Round black/white-face stickman, bold outline, real 3D lighting, cinema blur. Not in zip (images).
 
-- IMAGE-PROMPTS-v2.md: character-sheet extraction prompt, world plate prompt (no blur), same-place-new-angle prompt, light card, anti-stretch rules. DIRECTOR-BRAIN-REQUIREMENTS.md section 10 = look lock. Both in BRAIN-PACK.
+- IMAGE-PROMPTS-v2.md: (character-sheet prompt RETIRED 2026-10-29, see CHARACTER-SPEC-v2) world plate prompt (no blur), same-place-new-angle prompt, light card, anti-stretch rules. DIRECTOR-BRAIN-REQUIREMENTS.md section 10 = look lock. Both in BRAIN-PACK.
 
-- CHARACTER-SPEC-v1.md: LOCKED stickman design from Salman's character sheet. look-target/character-sheet-v1.png (not in zip).
+- CHARACTER-SPEC-v2.md: LOCKED canonical 3D stickman, Salman's text spec VERBATIM (2026-10-29; no image exists or is needed). Replaces CHARACTER-SPEC-v1 (old/CHARACTER-SPEC-v1.before-character-v2.md).
 
-- BUILD-STATE.md: resume protocol + batch status (READ FIRST after a limit). CHARACTER-BRAIN-v1.md: B1 detailed character file.
+- CHARACTER-CASTING-v1.md: how every person other than the main is made (same species, main's signature kit stripped, cast kit slots, style and colour limits, crowd tiers, cast card, script-to-character steps, main-in-costume rule, validation). 2026-10-29.
+
+- CHARACTER-IMPLEMENTATION-PROTOCOL-v1.md: how the brain puts the character into a real Three.js/Remotion repo (scope, inspect first, replace not add, API contract, rig, determinism, verification with 8 views and 10 poses, diff review, honest report). From Salman's replacement brief PDF. Training only until he says build.
+
+- BUILD-STATE.md: resume protocol + batch status (READ FIRST after a limit). CHARACTER-BRAIN-v2.md: B1/B10 working character file (invariants, proportions, head/face, 13 expressions, rig and limits, materials and light, scale by shot size, views, QA; replaces v1).
 
 - WORLD-PROMPT-WRITER-v1.md: B2 world prompt writer (world bible, plate registry, lighting recipes, scale formula, angle prompts by shot code, plate check, examples).
 
@@ -71,3 +75,5 @@ SHOT-GRAMMAR-v1.md (when to use which shot: face XCU, object macro, wide, physic
 - STRESS-TESTS-v1.md: B8 four kinds of test, scenarios S1-S12, scoring sheet, iteration and resume-test rules. ITERATION-LOG.md: feedback log.
 
 - STRESS-ROUND-01.md + STRESS-ROUND-01-shotlist.jsonl: first paper test S1-S3 with plate prompts P01-P07, plate request sheet, findings F1-F5. WORLD-PROMPT-WRITER-v1 horizon rule corrected (old copy in BRAIN-PACK/old/).
+
+- CINEMATIC-INTELLIGENCE-v1.md (2026-10-29): coordinating layer from the owner's instruction file: purpose test, priority ladder, dramatic beats/intent, staging, world state, event chains, one timeline, determinism, sound hooks, validation/repair/fallback, optional shot-list fields, anti-patterns. Wins over older library rules. Edited files keep originals in old/*.before-cinematic-upgrade.md: DIRECTOR-BRAIN-v1, CAMERA-SHOTS-LIBRARY-v1, PERFORMANCE-LAYER-v1, EFFECTS-FOR-FEEL-LIBRARY-v1, PRODUCTION-RESUME-PROTOCOL-v1, BRAIN-CHEATSHEET-v1, MASTER-SPEC-v1 (section 25), ITERATION-LOG, FILE-INDEX, MANIFEST, 00-START-HERE-INDEX, BUILD-STATE.

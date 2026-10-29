@@ -1,3 +1,4 @@
+NOTE 2026-10-29: this round was written for the OLD character (face plate, mitten fists, chibi proportions, glossy black body). Re-run the character parts with CHARACTER-SPEC-v2 before judging; wording like face plate, fist, dome and glossy head here is history.
 PROGRESS: complete (S1-S3, plate request sheet, findings F1-F5, scoring). Waiting for Salman's feedback.
 # STRESS ROUND 1 (paper test of S1, S2, S3) - 2026-10-28
 How to read: for each scenario the brain ran the full director procedure. Each shot is described in plain words. The machine version is in STRESS-ROUND-01-shotlist.jsonl. Each fixture is its own mini video with its own clock starting at frame 0 (24 fps; shot starts 0.15 s before the words; picture continues 1.5 s after the last word). Fixture timing was invented for the test.

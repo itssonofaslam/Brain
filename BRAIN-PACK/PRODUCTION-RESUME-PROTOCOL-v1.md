@@ -1,4 +1,4 @@
-PROGRESS: complete v1 (sections 1-10). Next: Salman stress-test feedback.
+PROGRESS: complete v1 (sections 1-10). Cinematic-intelligence upgrade applied 2026-10-29 (sections 4, 6, 9; original in old/). Next: Salman stress-test feedback.
 # PRODUCTION RESUME PROTOCOL v1 (batch B6, 2026-10-28)
 Purpose: while PRODUCING a video (not building the brain), a usage limit, a compaction, a new chat, a wiped workspace or a dropped Colab session must never lose work or force a restart. Hardest rule (Salman): bullet proof. Everything lives in files and memory; the chat is disposable.
 Facts this protocol respects: this workspace cannot run Remotion (npm blocked), so Claude writes the project files and Salman renders on Colab or his laptop; one render per video; frame = round(ms / 1000 x 24); chapters on one global frame clock (from the earlier explainer work); handoff note after each chapter; join-check stills.
@@ -47,6 +47,7 @@ CHAPTERS: ch01 done | ch02 in progress (shots s0021-s0043 done, s0044 next)
 RENDER: chunks 0-4 done, 5 failed (reason)
 OPEN QUESTIONS FOR SALMAN: ...
 DECISIONS THIS VIDEO: ...
+ENTITY STATE: see state.json (per entity: id, place, attached-to, state, visible, last event); keep the long list out of STATE.md
 ```
 Memory mirror /areas/video-<slug>.md: 6-10 lines copied from the top of STATE.md (stage, next action, folder, plate status, where the pack zip is).
 
@@ -60,7 +61,8 @@ Memory mirror /areas/video-<slug>.md: 6-10 lines copied from the top of STATE.md
 
 ## 6. CODE CHECKLIST BEFORE SENDING A CHAPTER (cannot be run here, so be strict)
 - Imports exist in the project; no placeholder text; every component prop is typed.
-- All times derive from frames on the global clock; no randomness without a fixed seed (renders must be repeatable per chunk).
+- All times derive from frames on the global clock (start_f inclusive, end_f exclusive). Frame N depends only on the plan and N: no wall-clock time, requestAnimationFrame, setInterval, unseeded Math.random, or state carried from the previous frame; every random-looking value is seeded from the entity or shot id plus the frame (CINEMATIC-INTELLIGENCE section 8). Seeking across a cut leaves no stale transform; any simulation is stepped from a known state or precomputed so any chunk can start anywhere.
+- Run the validation list (CINEMATIC-INTELLIGENCE section 10) over shotlist.jsonl and state.json before writing a chapter; every repair or fallback is noted in diag, never silent.
 - Plates referenced by id exist in the registry; depth maps present; effects within the budget.
 - No file over about 400 lines; no inline giant data (data goes to JSON).
 - A tiny smoke test composition (1 shot) exists so Salman can test a chapter before the whole run.
@@ -96,6 +98,9 @@ Resume prompt Salman can paste in any new chat: "Continue video <slug>. Read mem
 | Salman changes his mind late | log in fixes.md, mark affected shots/chapters "dirty" in STATE, redo only those |
 | plate unsuitable | redo prompt; only the dirty shots rebuild |
 | error from his render | record, fix, resend the changed file only |
+| shot line fails validation | repair deterministically (clamp, snap, swap code); if not safe use the locked/plain fallback and write a diag note; never change the story silently |
+| old shot line lacks the new optional fields | safe defaults (CINEMATIC-INTELLIGENCE section 11); do not rewrite old lines |
+| object state contradiction between shots | fix state.json, mark the affected shots "dirty", redo only those |
 
 ## 10. ALSO USED FOR BRAIN BUILDING
 The same laws apply to the brain build (BUILD-STATE.md and /areas/stickman-build-state.md). Production state files are separate from brain files so a video never changes the brain; brain-wide fixes from a video go into the brain files only when Salman says build.

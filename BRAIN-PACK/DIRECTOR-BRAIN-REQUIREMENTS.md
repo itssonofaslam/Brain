@@ -50,7 +50,7 @@ Same drawing and diagram devices as ours, but dynamic: the brain thinks where a 
 
 
 ## 10. LOOK LOCK (2026-10-28 08:01, Salman)
-- Look target = the 3 AI stills (look-target/). Canonical stickman = the close-up one. Character sheet to be extracted from the close-up first.
+- Look target = the 3 AI stills (look-target/). Canonical stickman = the close-up one. Character sheet to be extracted from the close-up first. [SUPERSEDED 2026-10-29: canonical character = CHARACTER-SPEC-v2.md, a real 3D stickman defined by Salman's text spec; the close-up is no longer the character reference.]
 - Worlds are made by Salman as STILL 3D-rendered images WITHOUT blur (deep focus). The brain makes the depth map, all blur/bokeh, glow, grain, parallax and letterbox. Brain writes the world prompts (light direction, colour, glow, empty ground area).
 - Each new angle of the same place = a new image from the same-place prompt (IMAGE-PROMPTS-v2.md, prompt 3).
 - The brain must think small character movements itself (micro-movements, e.g. head turning to the side, eye shifts, blink, breath, weight shift, hand twitch, shoulder drop) and how to do them; to be written into the performance layer.

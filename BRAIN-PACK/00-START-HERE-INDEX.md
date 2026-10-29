@@ -11,6 +11,9 @@ Read in this order when building the brain. LAYER 1 = the rules the brain follow
 7. PLUGIN-FOLD-IN-v1.md — build protocol, beat splitter, rig vocabulary + invention rule, visual checklist, dynamic giant-face rule, dynamic 3D flying shot (section 10)
 8. PATTERNS-LOG.md — cross-video patterns (rule = 3+ videos, likely = 2, seen once = 1)
 9. RESEARCH-CHECKLIST.md — what to log for every reference
+10. CINEMATIC-INTELLIGENCE-v1.md — coordinating layer (2026-10-29): purpose test, priority ladder, beats/intent, staging, world state, event frames, timeline, determinism, sound hooks, validation/repair/fallback. Wins over older library rules.
+
+11. CHARACTER-SPEC-v2.md (Salman's verbatim canonical 3D stickman spec, locked) + CHARACTER-BRAIN-v2.md (the brain's working numbers, expressions, rig, materials, scale, views, QA) + CHARACTER-CASTING-v1.md (every person other than the main: crowd, NPCs, script characters) + CHARACTER-IMPLEMENTATION-PROTOCOL-v1.md (how to build or replace him in code; training only until Salman says build). Added 2026-10-29; they replace the old chibi coin-head character everywhere.
 
 ## LAYER 2 — evidence per reference (ref1 Telekinesis, ref2 Reaction Time, ref3 One Second Ten, ref4 500 IQ, ref5 Gravity film)
 refN-findings / mp4-findings, refN-camera-measured, refN-easing-measured (or -auto), refN-palette, refN-colour-state-map, ref1-blueprint/cutlog/notes, ref2-notes/synthesis/style-block/palette-and-bursts, ref5-pacing-by-block, refN-transcript.txt
@@ -22,7 +25,7 @@ refN-findings / mp4-findings, refN-camera-measured, refN-easing-measured (or -au
 - PLUGIN-SOUND-PARKED.md — for the sound brain later; REF-PLUGIN-raw/ — their raw files (reference only, not our rules)
 
 ## Precedence
-Our measurements beat the plugin. Newer sections/versions beat older (v3 > v2 > v1; MASTER-SPEC 21-23 > 0-20). Open tests are marked OPEN TEST or UNVERIFIED in the files.
+Our measurements beat the plugin. Newer sections/versions beat older (v3 > v2 > v1; MASTER-SPEC 21-25 > 0-20). CINEMATIC-INTELLIGENCE-v1 (owner instruction) replaces older LIBRARY rules that conflict; measured rules stay. Open tests are marked OPEN TEST or UNVERIFIED in the files.
 
 ## Not yet in the pack (later)
 Sound-design brain, topic brain, script brain; Remotion test results (T1-T5, only when Salman says go).
